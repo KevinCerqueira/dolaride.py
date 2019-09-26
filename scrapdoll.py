@@ -1,3 +1,9 @@
+# ScrapDoll.py (WebScraping of the Dollar price).
+# Author: @Goomez (github.com/Goomez)
+# Copyright: Copyright (c) 2019 @Goomez. All rights reserved.
+# License: GNU General Public License v3.0
+# Version: 2.0.0
+
 import requests
 from bs4 import BeautifulSoup
 
