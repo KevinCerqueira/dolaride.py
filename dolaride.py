@@ -44,7 +44,7 @@ class DolaRide():
     def readAuth(self):
         arq = None
         try:
-            arq = open("auth_twitter.txt", 'r')
+            arq = open("auth_code.txt", 'r')
             while(True):
                 arq.readline()
                 self.NUM_API_KEY = arq.readline()
