@@ -1,9 +1,9 @@
 # Dolaride.py
 # Author: @Goomez (github.com/Goomez)
 # Copyright: Copyright (c) 2019 @Goomez. All rights reserved.
-# License: Private Domain
+# License: GNU General Public License v3.0
 # Version: 1.0.7
-# Última atualização: 26/09/19
+# Last Update: 26/09/19
 
 from scrapdoll import ScrapDoll
 from datetime import datetime
