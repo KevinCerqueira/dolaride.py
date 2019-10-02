@@ -47,13 +47,13 @@ class DolaRide():
             arq = open("auth_code.txt", 'r')
             while(True):
                 arq.readline()
-                self.NUM_API_KEY = arq.readline()
+                self.NUM_API_KEY = str(arq.readline())
                 arq.readline()
-                self.NUM_API_SECREAT_KEY = arq.readline()
+                self.NUM_API_SECREAT_KEY = str(arq.readline())
                 arq.readline()
-                self.NUM_ACCESS_TOKEN = arq.readline()
+                self.NUM_ACCESS_TOKEN = str(arq.readline())
                 arq.readline()
-                self.NUM_ACCESS_TOKEN_SECRET = arq.readline()
+                self.NUM_ACCESS_TOKEN_SECRET = str(arq.readline())
                 break;
         except:
             print("\nERRO: Não foi possivel ler o arquivo com os dados do BOT")
@@ -102,10 +102,10 @@ class DolaRide():
     #Faz a conexão com o BOT do twitter
     def authTwitter(self):
         self.readAuth()
-        api_key = NUM_API_KEY
-        api_secret_key = NUM_API_SECREAT_KEY
-        access_token = NUM_ACCESS_TOKEN
-        access_token_secret = NUM_ACCESS_TOKEN_SECRET
+        api_key = self.NUM_API_KEY
+        api_secret_key = self.NUM_API_SECREAT_KEY
+        access_token = self.NUM_ACCESS_TOKEN
+        access_token_secret = self.NUM_ACCESS_TOKEN_SECRET
         try:
             auth = tweepy.OAuthHandler(api_key, api_secret_key)
             auth.set_access_token(access_token, access_token_secret)
