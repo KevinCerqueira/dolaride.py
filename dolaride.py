@@ -45,16 +45,14 @@ class DolaRide():
         arq = None
         try:
             arq = open("auth_code.txt", 'r')
-            while(True):
-                arq.readline()
-                self.NUM_API_KEY = str(arq.readline())
-                arq.readline()
-                self.NUM_API_SECREAT_KEY = str(arq.readline())
-                arq.readline()
-                self.NUM_ACCESS_TOKEN = str(arq.readline())
-                arq.readline()
-                self.NUM_ACCESS_TOKEN_SECRET = str(arq.readline())
-                break;
+            arq.readline()
+            self.NUM_API_KEY = str(arq.readline())
+            arq.readline()
+            self.NUM_API_SECREAT_KEY = str(arq.readline())
+            arq.readline()
+            self.NUM_ACCESS_TOKEN = str(arq.readline())
+            arq.readline()
+            self.NUM_ACCESS_TOKEN_SECRET = str(arq.readline())    
         except:
             print("\nERRO: Não foi possivel ler o arquivo com os dados do BOT")
             self.exitScript()
