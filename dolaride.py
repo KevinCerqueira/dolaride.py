@@ -1,9 +1,9 @@
 # Dolaride.py
-# Author: @Goomez (github.com/Goomez)
+# Author: @KevinCerqueira (github.com/Goomez)
 # Copyright: Copyright (c) 2019 @Goomez. All rights reserved.
 # License: GNU General Public License v3.0
 # Version: 1.0.7
-# Last Update: 26/09/19
+# Last Update: 28/11/20
 
 from scrapdoll import ScrapDoll
 from datetime import datetime
@@ -195,7 +195,7 @@ class DolaRide():
 
     #interface inicial do script
     def interface(self):
-        msgCopy = 'Dolaride.py [version 1.0.6]\nCopyright (c) 2019 @Goomez. All rights reserved.'
+        msgCopy = 'Dolaride.py [version 1.0.6]\nCopyright (c) 2019 @KevinCerqueira. All rights reserved.'
         print(msgCopy)
         while(1):
             try:
@@ -218,7 +218,7 @@ class DolaRide():
         
         if(self.TEST):
             self.horaDeAbrir()
-            print('\n\t ...Created by @Goomez...\n\t__INICIALIZANDO O SCRIPT__')
+            print('\n\t ...Created by @KevinCerqueira...\n\t__INICIALIZANDO O SCRIPT__')
             print('\n- SICRONIZACAO A CADA {}s ({}min) -'.format(self.TIME, self.TIME/60))
         else: pass
         self.spanMsg()
